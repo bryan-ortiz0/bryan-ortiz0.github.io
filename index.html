@@ -1,36 +1,192 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Bryan Ortiz | Data Science Portfolio</title>
-    <meta
-      name="viewport"
-      content="initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Ortiz - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      body {
-        margin: 0;
-      }
-      article {
-        display: block;
-        min-height: 100vh;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -1;
-      }
-      iframe {
-        border: none;
-        width: 100%;
-        height: calc(var(--vh, 1vh) * 100);
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 1px;
+        }
+        .icons {
+            margin: 0;
+            padding-left: 2px;
+        }
+        .icons a {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .icons svg {
+            width: 24px;
+            height: 24px;
+            fill: #e0e0e0;
+            vertical-align: middle;
+        }
+        .icons a:hover svg {
+            fill: #ffffff;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project {
+            margin-bottom: 30px;
+        }
 
-  <body>
-    <article id="projects">
-      <iframe src="https://bryan-ortiz.vercel.app/" frameborder="0"> </iframe>
-    </article>
-  </body>
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            margin-bottom: 5px;
+        }
+
+        .project-skills {
+            font-size: 0.9em;
+            color: #b0b0b0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BRYAN ORTIZ</h1>
+        <div class="icons">
+            <a href="mailto:ortizbryan54321@gmail.com" title="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                </svg>
+            </a>
+            <a href="https://drive.google.com/file/d/1B7WEyIh_h3aEtlJAHGpLXsqZLshj99DR/view" title="Resume" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-10v-1h10v1zm0 2h-10v1h10v-1zm0 3h-10v1h10v-1z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/bryan-ortiz0" title="GitHub" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/bryan-ortiz0/" title="LinkedIn" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <section id="introduction">
+        <h2>INTRODUCTION</h2>
+        <p>Welcome to my portfolio. I am currently a data analyst with The Iowa Clinic. I enjoy working with data and learning new skills.</p>
+    </section>
+
+    <section id="certifications">
+        <h2>CERTIFICATIONS</h2>
+        <ul>
+            <li>Oracle Database SQL Certified Associate - Oracle, Februrary 2024</li>
+            <li>CompTIA Security+ - CompTIA, February 2023</li>
+            <li>CompTIA Network+ - CompTIA, January 2023</li>
+            <li>Aviatrix Multi-Cloud Certified Associate - Aviatrix, December 2022</li>
+            <li>CompTIA A+ - CompTIA, October 2022</li>
+        </ul>
+    </section>
+
+    <section id="work-experience">
+        <h2>WORK EXPERIENCE</h2>
+        <div class="job">
+            <h3>Data Analyst @ The Iowa Clinic</h3>
+            <p>May 2024 - Present</p>
+            <p>I am developing a Python script to consolidate all external data ingests, enhancing our data infrastructure. I created a Tableau dashboard for the Physical Therapy department, replacing a 7-year vendor relationship and saving over $16,000 annually. Using Python, I parse JSON files and apply NLP techniques to create a sentiment analysis dashboard on patient survey data. My role also involves optimizing SQL queries and utilizing PrecisionBI for efficient reporting on provider and patient performance metrics.</p>
+        </div>
+        <div class="job">
+            <h3>Teaching Assistant @ DriveX Network, University of The Bahamas</h3>
+            <p>Dec 2023 - Feb 2024</p>
+            <p>Contributed to innovative data analytics career training program that was introduced at the University of the Bahamas. Within this program, 28 professionals were coached as they gained in-demand skills for technology jobs. The coaching included instruction in essential database tools such as SQL, data visualization platforms like Tableau and Excel, and Python programming.</p>
+        </div>
+        <div class="job">
+            <h3>Teaching Assistant @ General Assembly Data Science Fellowship</h3>
+            <p>Nov 2023 - May 2024</p>
+            <p>Co-delivered a 12-week, thorough Data Science Immersive training program featuring Tableau, Python, R, SQL, and Machine Learning. Guided ten students with varying abilities, facilitating hands-on projects and monitoring assessment rubrics for major milestones.</p>
+        </div>
+        <div class="job">
+            <h3>Instructional Assistant @ L'Oréal Data Literacy Program</h3>
+            <p>Nov 2023 - Jan 2024</p>
+            <p>Supported lead instructor for L'Oréal's Data Literacy Program for 200+ non-technical participants, tackling data democratization, data lifecycle stages such as ETL and data modeling, and data visualization tools like Tableau and PowerBI. Facilitated coordination with L'Oréal's team, handled participant interactions via polls/trivia, and addressed questions, resulting in a flawless presentation by the lead instructor.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>EDUCATION</h2>
+        <div class="education-item">
+            <h3>B.Science in Neuroscience</h3>
+            <p>University of Iowa, 2015-2019</p>
+        </div>
+        <div class="education-item">
+            <h3>Data Science Immersive Fellowship</h3>
+            <p>General Assembly, 2023-2023</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Tableau</li>
+            <li>Excel</li>
+            <li>Business Intelligence</li>
+            <li>ETL</li>
+            <li>Bilingual</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>PROJECTS</h2>
+        <div class="project">
+            <h3>Forecasted Ethereum Prices Using Machine Learning</h3>
+            <p class="project-description">Analyzed 6 years of historical Ethereum price data from Bitstamp. Developed machine learning pipleines evaluating 5 models including XGBoost, achieving a 99.3% predictive power on holdout data.</p>
+            <p class="project-skills"><strong>Skills:</strong> Python, Pandas, NumPy, Tensorflow, Kera, XGBoost, Hugging Face</p>
+        </div>
+        <div class="project">
+            <h3>Go Bot</h3>
+            <p class="project-description">Engineered a Go-playing bot utilizing Convolutional Neural Networks (CNN) to understand intricate dynamics in the game of go, showing an accurate reaching 15% (baseline: .028%).</p>
+            <p class="project-skills"><strong>Skills:</strong> Python, CNN, Monte Carlo Tree Search, Keras</p>
+        </div>
+        <div class="project">
+            <h3>Examining Water Usage</h3>
+            <p class="project-description">Using K-means clustering to group counties based on water use patterns showed big differences in how much water is used for things like watering crops, supplying homes, and mining across counties. The results indicate specific chances for counties to work together to use water better in raising animals, mining, and fish farming as well as hints that people with higher incomes may use more water.</p>
+            <p class="project-skills"><strong>Skills:</strong> Python, Pandas, K-means clustering, DBSCAN, Git</p>
+        </div>
+        <div class="project">
+            <h3>Subreddit NLP</h3>
+            <p class="project-description">Designed and implemented models to categorize posts with 85-87% accuracy from online posts between two communities, showing potential to understand more about the groups through their language.</p>
+            <p class="project-skills"><strong>Skills:</strong> Machine Learning, Natural Language Processing, Random Forest, Naive Bayes</p>
+        </div>
+    </section>
+</body>
 </html>
